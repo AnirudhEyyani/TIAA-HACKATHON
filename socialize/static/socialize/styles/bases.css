@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,300&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body{
+  background: linear-gradient(to right, #DECBA4, #3E5151);
+}
+
+h1,
+h2,
+h3 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #292729;
+}
+
+button,
+.btn{
+  display: inline-block;
+  padding:10px 10px;
+  /* color:coral; */
+  background-color: bisque;
+  border: 2px solid coral;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  margin-top: 30px;
+  transition: .3s ease background-color;
+  transition-property: backgrouns-color, color;
+  font-weight: 800;
+}
+
+
+button:hover,
+.btn:hover{
+  color:black;
+  background-color: rgb(84, 70, 65);
+}
+
+
+#main-header {
+    width: 100%;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+#main-header h1 {
+    font-size: 1.5rem;
+}
+
+#main-logo {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2.5rem;
+    text-decoration: none;
+    color: #af5109;
+    font-weight: bold;
+  }
+  /* font-family: 'Source Sans Pro', sans-serif; */
+
+.rounded-gradient {
+  background-image: linear-gradient(to bottom right, #f5a742, #e8198b);
+  color: white;
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 24px;
+}
+
+/* navbar and footer css */
+
+.footer{
+  background-color: rgb(63, 56, 56);
+  color: white;
+  background: linear-gradient(to left, #DECBA4, #3E5151);
+  box-shadow: rgb(38, 57, 77) 0px -20px 30px -10px;
+}
+.main{
+  background-color: black;
+}
+.navbar{
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  background-color:  rgb(81, 53, 53);
+  background: linear-gradient(to left, #eacda3, #d6ae7b);
+}
+/* box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.25); */

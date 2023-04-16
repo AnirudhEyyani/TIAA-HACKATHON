@@ -1,0 +1,99 @@
+{% load static %}
+<!DOCTYPE >
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-eqiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %}Our Socialize GetTogether{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'socialize/styles/bases.css' %}" />
+    {% block sites_css%}{% endblock %}
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="..."
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="#">
+        <div class="rounded-gradient">DECODERS event</div>
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <form class="form-inline ml-auto">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search" />
+            <div class="input-group-append">
+              <button id="btn btn-outline-secondary" type="button">
+                <i class="fa fa-search"></i>
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <header id="main-header">
+      <nav><a href="/socialize" id="main-logo">🙏DECODERS hangout🙏</a></nav>
+      <h1>{% block main_headings %}{% endblock %}</h1>
+      {% block header_contents %}{% endblock %}
+    </header>
+    <main>{% block body %}{% endblock %}</main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <p>&copy; 2023 DECODERS event. All rights reserved.</p>
+            <p>123 Main St, Anytown MUMBAI</p>
+          </div>
+          <div class="col-md-6 text-md-right mt-lg-4">
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fab fa-facebook-f">facebook</i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fab fa-twitter">twitter</i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.instagram.com/">
+                  <i class="fab fa-instagram">instagram</i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fab fa-linkedin">linkedin</i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
