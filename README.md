@@ -23,12 +23,7 @@ This was specifically designed to put events for one DECODERS/Hangouts groups on
  * Python Django and Django Rest Framework
  * Python version: Python 3
  * Django version: 3 and above 
- * Uses SQLite as the database (BY DEFAULT AVAILABLE FOR DJANGO)
-
-
-⌨️  Creating a Blank Django Project :
-```
-    sudo django-admin startproject Forms
+ * Uses SQLite as the database (BY DEFAULT AVAILABLE FOR DJANGO
 ```
 To Run the Application in Server :
 ```
@@ -38,8 +33,6 @@ To Run the Application in Server :
  ```
     http://127.0.0.1:8000/
 ```
-⌨️  Setup in VS Code Text Editor :
- * You can install Python or Django Extension in your vs code.
 
 ⌨️  Project Settings :
 This command will migrate all our database in to SQLite3 file.
@@ -68,7 +61,7 @@ This command will migrate all our database in to SQLite3 file.
 ```
 
 ###  Getting Started with Templates :
-⌨️  Static Files & taking initial mark in the Django Template Language
+⌨️  Static Files & taking initial mark in the Django Template Language( auto generate static files)
 
  * To check the new template which we created we can see in the browser,
 ```
